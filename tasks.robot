@@ -68,7 +68,7 @@ Order robots from RobotSpareBin Industries Inc
     FOR    ${row}    IN    @{orders}
         Close the annoying modal
         Fill the form    ${row}
-        Wait Until Keyword Succeeds   8x   .5sec   Place Order
+        Wait Until Keyword Succeeds   10x   .5sec   Place Order
         Reciept To Pdf    ${row}
     END
     Close Browser
